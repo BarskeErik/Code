@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!--This is to make it compatible with IE-Edge-->
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<!--How to display on mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	<!--CSS is applied in the order it's placed-->  
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet"  media="screen and (min-width: 1000px)" href="mediaq.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img class="title-logo" src="image/logo.png" alt="logo">
+			</div>
+			<div class="col-md-6 text-right text-uppercase">
+				<h1 class="title-largest text-thin">Barske Barsken</h1>
+				<h4>Front-End Ninja</h4>
+			</div>
+		</div>	
+		<div calss="row">
+			<div class="col-md-12">
+				<!--Horizontal row bootstrap-->
+				<hr> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<img src="http://lorempixel.com/g/1130/400" alt="image">
+			</div> 
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="text-muted">Featured work</h2>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img class="img-responsive" src="image/images.jpg" width="350px" height="200px" alt="link" data-toggle="modal" data-target="#awesome" >
+				<h3 class="text-uppercase">Awesome</h3>
+				<p>http:link.goes.here.com</p>	
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive" src="http://lorempixel.com/350/200" alt="link" data-toggle="modal" data-target="#great">
+				<h3 class="text-uppercase">Great</h3>
+				<p>http:link.goes.here.com</p>	
+			</div>
+			<div class="col-md-4">
+				<img class="img-responsive" src="http://lorempixel.com/350/200" alt="link" data-toggle="modal" data-target="#amazing">
+				<h3 class="text-uppercase">Amazing</h3>
+				<p>http:link.goes.here.com</p>	
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<!--change the id (as well as the title, image and description) for each modal to be unique-->
+    <div class="modal fade" id="awesome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">The awesomeness</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="image/images.jpg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non imperdiet tellus. Morbi tempor malesuada tellus, consectetur malesuada ante consectetur in. Donec consequat, risus sit amet ultricies venenatis, quam felis lacinia quam, id varius nulla sapien vitae augue. Phasellus pharetra, sapien vel pretium ultrices, sem ex auctor ante, et blandit urna erat non urna. Praesent et ultricies quam, a varius mi. Integer tincidunt ipsum vitae tortor accumsan volutpat. Proin eros lacus, vulputate laoreet ligula ut, cursus viverra tortor. Curabitur tincidunt erat a tortor bibendum molestie. Cras sollicitudin imperdiet dolor, in laoreet mi elementum quis. Aenean molestie, est nec ullamcorper consectetur, risus ipsum dignissim nibh, id pretium massa erat ut turpis. Nam a erat enim. Curabitur vitae est fringilla, fringilla purus vel, pharetra justo. 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="great" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">The greatness</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://lorempixel.com/350/200">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non imperdiet tellus. Morbi tempor malesuada tellus, consectetur malesuada ante consectetur in. Donec consequat, risus sit amet ultricies venenatis, quam felis lacinia quam, id varius nulla sapien vitae augue. Phasellus pharetra, sapien vel pretium ultrices, sem ex auctor ante, et blandit urna erat non urna. Praesent et ultricies quam, a varius mi. Integer tincidunt ipsum vitae tortor accumsan volutpat. Proin eros lacus, vulputate laoreet ligula ut, cursus viverra tortor. Curabitur tincidunt erat a tortor bibendum molestie. Cras sollicitudin imperdiet dolor, in laoreet mi elementum quis. Aenean molestie, est nec ullamcorper consectetur, risus ipsum dignissim nibh, id pretium massa erat ut turpis. Nam a erat enim. Curabitur vitae est fringilla, fringilla purus vel, pharetra justo. 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="amazing" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">The amazing</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://lorempixel.com/350/200">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non imperdiet tellus. Morbi tempor malesuada tellus, consectetur malesuada ante consectetur in. Donec consequat, risus sit amet ultricies venenatis, quam felis lacinia quam, id varius nulla sapien vitae augue. Phasellus pharetra, sapien vel pretium ultrices, sem ex auctor ante, et blandit urna erat non urna. Praesent et ultricies quam, a varius mi. Integer tincidunt ipsum vitae tortor accumsan volutpat. Proin eros lacus, vulputate laoreet ligula ut, cursus viverra tortor. Curabitur tincidunt erat a tortor bibendum molestie. Cras sollicitudin imperdiet dolor, in laoreet mi elementum quis. Aenean molestie, est nec ullamcorper consectetur, risus ipsum dignissim nibh, id pretium massa erat ut turpis. Nam a erat enim. Curabitur vitae est fringilla, fringilla purus vel, pharetra justo. 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
